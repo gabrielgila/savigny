@@ -5,7 +5,7 @@ body {
 
 /* Home Page */
 
-.home-video {
+.home-first {
     height: 100vh;
     text-align: center;
     align-content: center;
@@ -14,26 +14,63 @@ body {
     align-items: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: black;
+    background-color: black
 }
 
 .home-title {
     font-weight: 900;
+    font-size: 60px;
 }
 
-.enter-button-home {
+.button-enter-home {
+    padding-top: 15px;
+}
+
+.enter-home {
     padding-right: 30px;
     padding-left: 30px;
+    font-weight: 700;
+    font-size: 22px;
 }
 
-
-.video-home {
-    height: 100%;
-    background-color: dimgrey !important;
+.home-second {
+    height: 100vh;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: "white"
 }
 
-.navbar {
-    background-color: transparent;
+.paragraph-home {
+    font-size: 22px;
+    font-weight: 300;
 }
+
+.home-third {
+    background-image:
+            linear-gradient(to right, rgba(181, 186, 187, 1), rgba(181, 186, 187, 0)),
+            url('../images/ourCompanyHome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.our-company-home {
+    font-size: 50px;
+    font-weight: 600
+}
+
+.div-our-company-text {
+    padding-top: 15px;
+}
+
+.our-company-text {
+    font-size: 25px;
+    font-weight: 300
+}
+
 
 

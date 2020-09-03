@@ -1,0 +1,39 @@
+body {
+    font-family: 'Red Hat Display', sans-serif
+}
+
+
+/* Home Page */
+
+.home-video {
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: black;
+}
+
+.home-title {
+    font-weight: 900;
+}
+
+.enter-button-home {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+.video-home {
+    height: 100%;
+    background-color: dimgrey !important;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+

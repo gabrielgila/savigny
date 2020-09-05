@@ -2,6 +2,10 @@ body {
     font-family: 'Red Hat Display', sans-serif
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important
+}
 
 /* Home Page */
 
@@ -23,7 +27,7 @@ body {
 }
 
 .button-enter-home {
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .enter-home {
@@ -102,8 +106,8 @@ body {
     background-repeat: no-repeat;
     background-size: contain
 }
-.product-one {
-    background-image: url('../images/productOne.png');
+.product-three {
+    background-image: url('../images/productThree.png');
     height: 40vh;
     align-content: center;
     text-align: center;
@@ -117,5 +121,15 @@ body {
     font-weight: 900;
     color: white
 }
+
+.footer-text {
+    font-weight: 700;
+    font-size: 22px
+}
+
+.footer-logo {
+    padding-left: 5px;
+}
+
 
 

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Red Hat Display', sans-serif
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .row {
@@ -122,14 +122,37 @@ body {
     color: white
 }
 
-.footer-text {
+.footer-desktop-text {
     font-weight: 700;
     font-size: 22px
 }
 
-.footer-logo {
+.footer-logo-desktop {
     padding-left: 5px;
 }
 
+.footer-logo-mobile {
+    width: 190px;
+    height: 190px
+}
+
+.footer-mobile-subtitle {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-mobile-text {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.content-desktop {display: block;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+    .content-desktop {display: none}
+    .content-mobile {display: block}
+}
 
 

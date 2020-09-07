@@ -6,6 +6,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,90 +17,217 @@
 
     <!-- Site Title -->
     <title>Savigny</title>
+
 </head>
 
 <body>
-    <div class="home-first jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="home-title">Focused Passion and Energy in</h1>
-            <h1 class="home-title">Achieving Excellence</h1>
-            <div class="button-enter-home">
-                <button type="button" class="btn btn-outline-light rounded-pill border border-white">
-                    <div class="enter-home">ENTER</div>
+    <nav class="navbar navbar-default navbar-expand-lg nav-menu">
+        <div class="container-fluid">
+            <button class="navbar-toggler nav-button ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="line1 ham"></div>
+                <div class="line2 ham"></div>
+                <div class="line3 ham"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="content-desktop nav-item">
+                        <a class="nav-link m-2 menu-item" href="contact.html">OUR COMPANY</a>
+                    </li>
+                    <li class="pt-2 mb-3">
+                        <img class="nav-item navbar-mobile-logo" src="images/savignyLogo.svg">
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="content-mobile nav-item">
+                        <a class="nav-link m-2 menu-item" href="">OUR COMPANY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="ourproducts.html">OUR PRODUCTS</a>
+                    </li>
+                    <li class="content-mobile nav-item">
+                        <a class="nav-link m-2 menu-item" href="contact.html">CONTACT</a>
+                    </li>
+                    <div class="content-mobile">
+                        <div class="col 10 d-flex justify-content-start pt-4 pb-4">
+                            <a href="https://www.facebook.com/" target=”_blank”>
+                                <img class="p-2 white-fill" src="images/facebook.svg" alt="Facebook logo" >
+                            </a>
+                            <a href="https://www.facebook.com/" target=”_blank”>
+                                <img class="p-2 white-fill" src="images/twitter.svg" alt="Twitter Logo" >
+                            </a>
+                            <a href="https://www.facebook.com/" target=”_blank”>
+                                <img class="p-2 white-fill" src="images/instagram.svg" alt="Instagram Logo" >
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home-component" >
+        <div class="home-first">
+            <div class="container align-self-center">
+                <h1 class="home-title">Focused Passion and Energy in</h1>
+                <h1 class="home-title">Achieving Excellence</h1>
+                <div class="button-enter-home">
+                    <button type="button" class="btn btn-outline-light rounded-pill border border-white">
+                        <a class="enter-home" href="">ENTER</a>
+                    </button>
+                </div>
+                <div class="pt-5">
+                    <img src="images/downArrow.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-second">
+        <div class="container-fluid">
+            <div class="row pt-5 pb-5">
+                <div class="col px-5 mx-5">
+                    <div class="content-desktop">
+                        <p class="paragraph-desktop pt-4 pb-4">
+                            The trillions of bacteria in your gut have a profound influence on our health, metabolism, and even disease protection.
+                            <br >
+                            <br >
+                            A balanced microbiota with beneficial and probiotic bacteria performs many other functions, like maintaining the correct pH to deter pathogens and keeping the gut lining healthy. Research even shows that gut microbes are involved in maintaining a healthy body weight.
+                            <br >
+                            <br >
+                            OUR COMPANY & QUALITY
+                            <br >
+                            Savigny is a company specialized in the development of high quality probiotics and proven therapeutic efficacy that helps to balance the gut microbiome.
+                            <br >
+                            <br >
+                            Our products meet the universal requirements of high standards. Hence, we are able to make available to consumers and professionals safe and effective therapies. Our mesh enterprise supports methods, chemicals, molecular entities and procedures established in international guidelines as good practices in pharmaceutical development. Before we commercialize and market products we comply and meet with all requirements stipulated by the local public health and regulatory agencies. Our program of continuous education and training provides our employees and collaborators with the necessary tools to create better quality system
+                        </p>
+                    </div>
+                    <div class="content-mobile">
+                        <p class="paragraph-mobile pt-5 pb-5 px-2">
+                            The trillions of bacteria in your gut have a profound influence on our health, metabolism, and even disease protection.
+                            <br >
+                            <br >
+                            A balanced microbiota with beneficial and probiotic bacteria performs many other functions, like maintaining the correct pH to deter pathogens and keeping the gut lining healthy. Research even shows that gut microbes are involved in maintaining a healthy body weight.
+                            <br >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-desktop">
+        <div class="home-third container-fluid">
+            <div class="row pt-5 pb-5">
+                <div class="col px-5 mx-5">
+                    <div class="our-company-home">OUR</div>
+                    <div class="our-company-home">COMPANY</div>
+                    <div class="div-our-company-text">
+                        <div class="our-company-text">Savigny is a company specialized in the development of high</div>
+                        <div class="our-company-text">quality probiotics and proven therapeutic efficacy that help</div>
+                        <div class="our-company-text">to balance the gut microbiome</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-mobile">
+        <div class="home-third-mobile jumbotron jumbotron-fluid">
+            <div class="container px-2">
+                <div class="our-company-home">OUR</div>
+                <div class="our-company-home">COMPANY</div>
+                <div class="div-our-company-text">
+                    <div class="our-company-text">Savigny is a company specialized in the development of high</div>
+                    <div class="our-company-text">quality probiotics and proven therapeutic efficacy that help</div>
+                    <div class="our-company-text">to balance the gut microbiome</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-fourth content-desktop">
+        <div class="container align-self-center">
+            <div class="our-products-title">OUR PRODUCTS</div>
+            <div class="our-products-text-box">
+                <div class="our-products-description">
+                    Savigny is a company specialized in the development of high quality probiotics
+                </div>
+                <div class="our-products-description">
+                    and proven therapeutic efficacy that help to balance the gut microbiome.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-mobile">
+        <div class="home-fourth-mobile jumbotron jumbotron-fluid">
+            <div class="container px-2">
+                <div class="our-company-home">OUR</div>
+                <div class="our-company-home">PRODUCTS</div>
+                <div class="div-our-company-text">
+                    <div class="our-company-text">Savigny is a company specialized in the development of high</div>
+                    <div class="our-company-text">quality probiotics and proven therapeutic efficacy that help</div>
+                    <div class="our-company-text">to balance the gut microbiome</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-desktop mt-3">
+        <div class="container-fluid pt-5">
+            <div class="row d-flex justify-content-center pt-2">
+                <div class="col-md-4 mx-1 mx-5-md product-one d-flex align-items-center">
+                    <a class="product-name" href="adiran.html">ADIRAN</a>
+                </div>
+                <div class="col-md-4 mx-1 mx-5-md product-two d-flex align-items-center">
+                    <a class="product-name" href="idara.html">IDARA</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center pt-4 pt-1-md">
+                <div class="col-md-4 mx-1 mx-5-md product-three d-flex align-items-center">
+                    <a class="product-name" href="dulani.html">DULANI</a>
+                </div>
+                <div class="col-md-4 mx-1 mx-5-md product-fourth d-flex align-items-center">
+                    <a class="product-name" href="xenia.html">XENIA</a>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center pt-5 mt-4">
+                <button type="button" class=" d-flex justify-content-center btn btn-outline-dark rounded-pill border border-dark justify-content-center">
+                    <a class="enter-home" href="ourproducts.html">ENTER</a>
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="home-second col-12">
-        <div class="container">
-            <div class="col 0">
-                <p class="paragraph-home">
-                    The trillions of bacteria in your gut have a profound influence on our health, metabolism, and even disease protection.
-                    <br >
-                    <br >
-                    A balanced microbiota with beneficial and probiotic bacteria performs many other functions, like maintaining the correct pH to deter pathogens and keeping the gut lining healthy. Research even shows that gut microbes are involved in maintaining a healthy body weight.
-                    <br >
-                    <br >
-                    OUR COMPANY & QUALITY
-                    Savigny is a company specialized in the development of high quality probiotics and proven therapeutic efficacy that helps to balance the gut microbiome.
-                    <br >
-                    <br >
-                    Our products meet the universal requirements of high standards. Hence, we are able to make available to consumers and professionals safe and effective therapies. Our mesh enterprise supports methods, chemicals, molecular entities and procedures established in international guidelines as good practices in pharmaceutical development. Before we commercialize and market products we comply and meet with all requirements stipulated by the local public health and regulatory agencies. Our program of continuous education and training provides our employees and collaborators with the necessary tools to create better quality system
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="home-third jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="our-company-home">OUR</div>
-            <div class="our-company-home">COMPANY</div>
-            <div class="div-our-company-text">
-                <div class="our-company-text">Savigny is a company specialized in the development of high</div>
-                <div class="our-company-text">quality probiotics and proven therapeutic efficacy that help</div>
-                <div class="our-company-text">to balance the gut microbiome</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="home-fourth col-12">
-        <div>
-            <div class="">
-                <div class="our-products-title">OUR PRODUCTS</div>
-                <div class="our-products-text-box">
-                    <div class="our-products-description">
-                        Savigny is a company specialized in the development of high quality probiotics
-                    </div>
-                    <div class="our-products-description">
-                        and proven therapeutic efficacy that help to balance the gut microbiome.
-                    </div>
+    <section class="content-mobile p-0 pt-3">
+        <div class="container-fluid p-0">
+            <div class="row px-0 m-0">
+                <div class="col-12 mobile-product d-flex align-items-center px-0 pt-5">
+                    <img class="w-100" src="images/productOne.png">
+                    <a class="mobile-product-link" href="adiran.html">ADIRAN</a>
+                </div>
+                <div class="col-12 mobile-product d-flex align-items-center px-0 pt-5">
+                    <img class="w-100" src="images/productTwo.png">
+                    <a class="mobile-product-link" href="idara.html">IDARA</a>
+                </div>
+                <div class="col-12 mobile-product d-flex align-items-center px-0 pt-5">
+                    <img class="w-100" src="images/productThree.png">
+                    <a class="mobile-product-link" href="dulani.html">DULANI</a>
+                </div>
+                <div class="col-12 mobile-product d-flex align-items-center px-0 pt-5">
+                    <img class="w-100" src="images/productFourth.png">
+                    <a class="mobile-product-link" href="xenia.html">XENIA</a>
+                </div>
+                <div class="container d-flex justify-content-center pt-5 mt-4 mb-3">
+                    <button type="button" class=" d-flex justify-content-center btn btn-outline-dark rounded-pill border border-dark justify-content-center">
+                        <a class="enter-product-mobile" href="ourproducts.html">ENTER</a>
+                    </button>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="pt-5 container">
-            <div class="row">
-                <div class="col justify-content-center">
-                    <div class="product-one">
-                        <div>ADRIRAN</div>
-                    </div>
-                </div>
-                <div class="col product-one">
-                    <div class="product-name">IDARA</div>
-                </div>
-                <div class="w-100"></div>
-                <div class="col product-three">
-                    <div class="product-name">DULANI</div>
-                </div>
-                <div class="col product-one">
-                    <div class="product-name">XENIA</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-desktop">
+    <div class="content-desktop pt-5">
         <div class="pt-5">
             <img class="w-100" src="images/footerDesktop.png">
         </div>
@@ -154,6 +284,7 @@
     </div>
 
     <!---->
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

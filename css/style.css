@@ -2,10 +2,115 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+a:hover {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
 .row {
     margin-right: 0 !important;
     margin-left: 0 !important
 }
+
+.content-desktop {display: block;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+    .content-desktop {display: none}
+    .content-mobile {display: block}
+}
+
+/* Nav Bar */
+
+.nav-menu {
+    background: transparent;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.4s;
+}
+
+@media (max-width: 34em) {
+    .nav-menu {
+        background: #121212 !important;
+    }
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.menu-item {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 34em) {
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+}
+
+.ham {
+    transition: width 0.3s;
+    background: #f9f8f7;
+}
+
+.line1,
+.line3 {
+    width: 28px;
+    height: 2px;
+    margin: 6px;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+    color: yellow;
+}
+
+.nav-active {
+    color: yellow;
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.costum-navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #121212 !important;
+    position: fixed;
+}
+
+.white-fill {
+    -webkit-filter: invert(100%);
+    filter: invert(100%)
+}
+
 
 /* Home Page */
 
@@ -18,12 +123,13 @@ body {
     align-items: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: black
+    background-color: dimgrey;
 }
 
 .home-title {
     font-weight: 900;
     font-size: 60px;
+    color: white
 }
 
 .button-enter-home {
@@ -38,7 +144,6 @@ body {
 }
 
 .home-second {
-    height: 100vh;
     align-content: center;
     display: flex;
     justify-content: center;
@@ -48,9 +153,14 @@ body {
     background-color: "white"
 }
 
-.paragraph-home {
+.paragraph-desktop {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 300
+}
+
+.paragraph-mobile {
+    font-size: 25px;
+    font-weight: 300
 }
 
 .home-third {
@@ -60,6 +170,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 430px;
+}
+
+.home-third-mobile {
+    background-image:
+            linear-gradient(to right, rgba(181, 186, 187, 1), rgba(181, 186, 187, 0)),
+            url('../images/ourCompanyMobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 522px;
 }
 
 .our-company-home {
@@ -79,6 +198,9 @@ body {
 .home-fourth {
     text-align: center;
     justify-content: center;
+    background-color: white
+}
+.home-fourth-mobile {
     background-color: white
 }
 
@@ -104,8 +226,21 @@ body {
     text-align: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: contain;
+    background-position: center 50%
 }
+
+.product-two{
+    background-image: url('../images/productTwo.png');
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50%
+}
+
 .product-three {
     background-image: url('../images/productThree.png');
     height: 40vh;
@@ -113,7 +248,19 @@ body {
     text-align: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: contain;
+    background-position: center 50%
+}
+
+.product-fourth {
+    background-image: url('../images/productFourth.png');
+    height: 40vh;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50%
 }
 
 .product-name {
@@ -122,6 +269,28 @@ body {
     color: white
 }
 
+.mobile-product {
+    position: relative;
+    text-align: center;
+    color: white
+}
+
+.mobile-product-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 900;
+    color: white
+}
+
+.enter-product-mobile {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
 .footer-desktop-text {
     font-weight: 700;
     font-size: 22px
@@ -143,16 +312,63 @@ body {
 
 .footer-mobile-text {
     font-size: 22px;
+    font-weight: 700
+}
+
+/* Extra */
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/240572/pexels-photo-240572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hero {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
     font-weight: 700;
-    text-align: right;
+    letter-spacing: 2px;
 }
 
-.content-desktop {display: block;}
-.content-mobile {display: none;}
-
-@media screen and (max-width: 768px) {
-    .content-desktop {display: none}
-    .content-mobile {display: block}
+.sub-text-hero {
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 9px;
+    color: orange;
 }
+
+.nav-bottom {
+    background: transparent !important;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.item-bottom {
+    padding: 0 20px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.item-bottom:hover {
+    background: transparent;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
 
 

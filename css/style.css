@@ -241,6 +241,17 @@ a:hover {
     background-position: center 50%
 }
 
+.product-two-solid {
+    background-image: url('../images/productTwoSolid.png');
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50%
+}
+
 .product-three {
     background-image: url('../images/productThree.png');
     height: 40vh;
@@ -318,14 +329,13 @@ a:hover {
 /* Extra */
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url("https://images.pexels.com/photos/240572/pexels-photo-240572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            url("https://images.pexels.com/photos/240572/pexels-photo-240572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,6 +371,48 @@ a:hover {
 .item-bottom:hover {
     background: transparent;
     transform: translateY(-2px);
+}
+
+/* Contact */
+
+.contact-home {
+    background-image:
+            linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)),
+            url('../images/contact.png');
+    height: 100vh;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: left;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.enter-contact {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+/* Our products */
+
+.our-products-home {
+    background-image: url('../images/ourProducts.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: left;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0
 }
 
 

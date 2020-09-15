@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d2a07e83-34e2-4a92-bf49-726a69562f4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adiran.html" beforeDir="false" afterPath="$PROJECT_DIR$/adiran.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/temporayHomeImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/temporayHomeImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/kelly-sikkema-Z4GKcFAGck4-unsplash.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourproducts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savigny_site01.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <workItem from="1599697468769" duration="2497000" />
       <workItem from="1599844407239" duration="2118000" />
       <workItem from="1600102537639" duration="24680000" />
-      <workItem from="1600175337364" duration="7719000" />
+      <workItem from="1600175337364" duration="20245000" />
     </task>
     <servers />
   </component>

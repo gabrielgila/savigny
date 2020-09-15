@@ -507,7 +507,6 @@ a:hover {
 
 /* Contact */
 
-
 .text-get {
     font-size: 50px;
     font-weight: 700
@@ -547,13 +546,99 @@ a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-    text-align: center;
-
+    text-align: center
 }
 
 .product-sutbtitle {
     font-size: 30px;
 }
+
+.product-sutbtitle-mobile {
+    font-size: 35px;
+    line-height: 0.5
+}
+
+/* Product One */
+
+.product-adiran {
+    background-image: url('../images/productAdiran.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: left;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0
+}
+
+.product-adiran-mobile {
+    background-image: url('../images/productAdiran.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center
+}
+
+.product-page-title {
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    line-height: 0.9
+}
+
+.product-title-mobile {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    line-height: 0.8
+}
+
+.title-description {
+    font-size: 40px;
+    font-weight: 700
+}
+
+.paragraph-description {
+    font-size: 18px;
+    line-height: 2.2
+}
+
+.paragraph-description-white {
+    font-size: 18px;
+    line-height: 2.2;
+    color: white
+}
+
+.absolute-description-desktop {
+    width: 50%;
+    height: 25%;
+    background-color: #E3812D;
+    position: absolute;
+    bottom: 0%
+}
+
+.more-info-adiran {
+    background-color: #E3812D;
+    font-size: 20px;
+    font-weight: 700;
+    color: white
+}
+
+.back-word {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
 
 
 

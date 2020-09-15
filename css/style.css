@@ -3,13 +3,18 @@ body {
 }
 
 a {
-    color: inherit; /* blue colors for links too */
+    color: inherit; /* */
     text-decoration: inherit; /* no underline */
 }
 
 a:hover {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: #707070; /*  */
+    text-decoration: #707070; /* no underline */
+}
+
+.btn-outline-light:hover {
+    color: #707070;
+    border-color: #707070;
 }
 
 .row {
@@ -47,10 +52,20 @@ a:hover {
 }
 
 .menu-item {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
     color: white;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-item-mobile {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 @media (max-width: 34em) {
@@ -111,19 +126,67 @@ a:hover {
     filter: invert(100%)
 }
 
+.nav-m {
+    margin: 0 !important;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.relative-div {
+    position: relative;
+}
+
+.absolute-contact-right {
+    position: absolute;
+    top: 0%;
+    right: -110%;
+}
+
+.dark-button {
+    color: #121212
+}
+
+.button-mobile-absolute {
+    position: absolute;
+    bottom: 20%
+}
+
+.send-contact-mobile {
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 700;
+    font-size: 32px;
+    width: 60vw;
+}
+
+.title-mobile-abolute {
+    position: absolute;
+   top: 30%
+}
 
 /* Home Page */
 
 .home-first {
+    background-image: url('../images/temporayHomeImage.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
     align-content: center;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: dimgrey;
+    position: relative
+}
+
+.home-social {
+    position: absolute;
+    top: 50%;
+    left: 5%
 }
 
 .home-title {
@@ -391,6 +454,27 @@ a:hover {
     padding: 0 0 0 0;
 }
 
+.contact-home-mobile {
+    background-image:
+            linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)),
+            url('../images/contact.png');
+    height: 100vh;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.mobile-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .enter-contact {
     padding-right: 30px;
     padding-left: 30px;
@@ -398,6 +482,25 @@ a:hover {
     font-size: 22px;
 }
 
+.enter-contact-mobile {
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Contact */
+
+
+.text-get {
+    font-size: 50px;
+    font-weight: 700
+}
+
+.title-form {
+    font-size: 20px;
+    font-weight: 300
+}
 
 /* Our products */
 
@@ -415,6 +518,9 @@ a:hover {
     padding: 0 0 0 0
 }
 
+.product-sutbtitle {
+    font-size: 30px;
+}
 
 
 

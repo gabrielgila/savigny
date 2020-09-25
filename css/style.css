@@ -654,6 +654,13 @@ a:hover {
     line-height: 0.9
 }
 
+.product-page-title-dark {
+    font-weight: 900;
+    font-size: 60px;
+    color: #313030;
+    line-height: 0.9
+}
+
 .product-title-mobile {
     font-weight: 700;
     font-size: 60px;
@@ -738,6 +745,21 @@ a:hover {
     align-items: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0
+}
+
+.product-adiran-mobile {
+    background-image: url('../images/productIdara.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center
+
 }
 
 .absolute-description-desktop-idara {

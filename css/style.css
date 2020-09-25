@@ -42,17 +42,7 @@ a:hover {
     .footer-mobile {display: block}
 }
 
-.btn:focus,.btn:active:focus,.btn.active:focus,
-.btn.focus,.btn:active.focus,.btn.active.focus {
-    outline: none;
-}
-
 /* Nav Bar */
-
-.navbar-toggler {
-    border: none !important;
-    border-radius: none !important;
-}
 
 .nav-menu {
     background: transparent;
@@ -202,8 +192,8 @@ a:hover {
 
 .home-social {
     position: absolute;
-    top: 50%;
-    left: 5%
+    bottom: 50%;
+    z-index: 1;
 }
 
 .home-title {

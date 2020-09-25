@@ -208,11 +208,11 @@ a:hover {
 
 .button-white-border {
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color:  white;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .enter-home {
@@ -390,6 +390,13 @@ a:hover {
     transition: .5s ease;
     color: #707070
 }
+
+.white-div:hover .mobile-product-link {
+    transition: .5s ease;
+    color: #707070
+}
+
+
 
 .mobile-product {
     position: relative;

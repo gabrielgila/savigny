@@ -307,6 +307,21 @@ a:hover {
     font-weight: 300
 }
 
+/* Filter Categories */
+
+
+
+.product-filter {
+    font-size: 18px;
+    font-weight: 300
+}
+
+.product-filter:hover {
+    font-size: 18px;
+    font-weight: 800;
+    transition: .5s ease;
+}
+
 .product-one {
     background-image: url('../images/productOne.png');
     height: 40vh;
@@ -395,8 +410,6 @@ a:hover {
     transition: .5s ease;
     color: #707070
 }
-
-
 
 .mobile-product {
     position: relative;
@@ -664,7 +677,7 @@ a:hover {
     color: white
 }
 
-.absolute-description-desktop {
+.absolute-description-desktop-adiran {
     width: 50%;
     height: 25%;
     background-color: #E3812D;
@@ -693,15 +706,15 @@ a:hover {
     font-size: 22px;
 }
 
-.button-back-mobile {
+.button-back-mobile-adiran {
     padding-top: 22px;
     padding-bottom: 22px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color:  #E3812D;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     font-size: 25px;
     font-weight: 700;
     color: #E3812D
@@ -709,6 +722,64 @@ a:hover {
 
 .adiran-p-color-mobile {
     background-color: #E3812D;
+}
+
+/* Product Two */
+
+.product-idara {
+    background-image: url('../images/productIdara.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: left;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0
+}
+
+.absolute-description-desktop-idara {
+    width: 50%;
+    height: 33%;
+    background-color: #074C61;
+    position: absolute;
+    bottom: 0%
+}
+
+.more-info-idara {
+    background-color: #074C61;
+    font-size: 20px;
+    font-weight: 700;
+    color: white
+}
+
+.idara-p-color-mobile {
+    background-color: #074C61
+}
+
+.more-info-idara-mobile {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #074C61;
+    font-size: 25px;
+    font-weight: 700;
+    color: white
+}
+
+.button-back-mobile-idara {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #074C61;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #074C61
 }
 
 

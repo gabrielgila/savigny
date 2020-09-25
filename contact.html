@@ -34,7 +34,9 @@
                             <a class="nav-link menu-item text-nowrap" href="">OUR COMPANY</a>
                         </li>
                         <li class="pt-2 mb-3">
-                            <img class="nav-item navbar-mobile-logo" src="images/savignyLogo.svg">
+                            <a href="index.html">
+                                <img class="nav-item navbar-mobile-logo" src="images/savignyLogo.svg">
+                            </a>
                         </li>
                         <li class="nav-item content-desktop px-2">
                             <a class="nav-link menu-item text-nowrap" href="ourproducts.html">OUR PRODUCTS</a>
@@ -45,6 +47,9 @@
                         </li>
                         <li class="content-mobile nav-item">
                             <a class="nav-link menu-item-mobile" href="ourproducts.html">OUR PRODUCTS</a>
+                        </li>
+                        <li class="content-mobile nav-item">
+                            <a class="nav-link menu-item-mobile" href="contact.html">CONTACT</a>
                         </li>
                         <div class="content-mobile">
                             <div class="col 10 d-flex justify-content-start pt-4 pb-4">
@@ -66,6 +71,10 @@
                         <li class="content-desktop nav-item">
                             <a class="nav-link menu-item" href="contact.html">CONTACT</a>
                         </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse mr-auto order-3 absolute-home-left">
+                    <ul class="navbar-nav ml-auto">
                         <li class="content-desktop nav-item">
                             <a class="nav-link menu-item" href="index.html">HOME</a>
                         </li>
@@ -160,32 +169,51 @@
         </div>
     </section>
 
-    <div class="content-desktop pt-5">
+    <section class="content-desktop">
         <div class="pt-5">
             <img class="w-100" src="images/footerDesktop.png">
         </div>
-        <div class="row">
-            <div class="pt-5">
-                <div class="pt-5 ml-5 pl-5">
-                    <img class="footer-logo-desktop float-left" src="images/logo.svg" alt="Savigny Logo">
-                </div>
-                <div class="w-100 pt-2"></div>
-            </div>
-        </div>
-        <div class="d-flex pt-4 pb-5">
-            <div class="mr-auto ml-5 pl-5">
-                <span class="footer-desktop-text">Focused Passion and Energy in Achieving Excellence</span>
-            </div>
-            <div class="ml-auto mr-5 pr-5">
-                <span class="footer-desktop-text text-right">© 2020 Savigny by Rossmore Pharma Iberica SL</span>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="content-mobile">
+    <section class="footer-desktop">
+        <div class="pt-5">
+            <div class="row">
+                <div class="pt-5">
+                    <div class="pt-5 ml-5 pl-5">
+                        <img class="footer-logo-desktop float-left" src="images/logo.svg" alt="Savigny Logo">
+                    </div>
+                    <div class="w-100 pt-2"></div>
+                </div>
+            </div>
+            <div class="container-fluid pb-5">
+                <div class="row pb-5">
+                    <div class="col-5 align-self-end d-flex justify-content-start">
+                        <div class="pl-5 ml-3 mb-0 pb-0 footer-desktop-text text-nowrap">
+                            Focused Passion and Energy in Achieving Excellence
+                        </div>
+                    </div>
+                    <div class="col-2 align-self-end d-flex justify-content-center">
+                        <div class="mb-0 pb-0 footer-desktop-second-text text-nowrap">
+                            © 2020 Savigny by Rossmore Pharma Iberica SL
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-end d-flex justify-content-end">
+                        <div class="pr-5 mr-3 mb-0 pb-0">
+                            <img src="images/rossmoreLogo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-mobile">
         <div class="pt-5">
             <img class="w-100" src="images/footerMobile.png">
         </div>
+    </section>
+
+    <section class="footer-mobile">
         <div class="col 0">
             <div class="col-12 container justify-content-center">
                 <div class="pt-5 d-flex justify-content-center text-center">
@@ -196,10 +224,11 @@
                 <br >
                 in Achieving Excellence
                 </span>
-                <span class="pt-5 footer-mobile-text d-flex justify-content-center text-center">
-                    © 2020 Savigny by Rossmore
-                    <br >
-                    Pharma Iberica SL
+                <div class="d-flex align-self-center justify-content-center pt-3">
+                    <img src="images/rossmoreLogo.png">
+                </div>
+                <span class="footer-mobile-text d-flex justify-content-center text-center pt-4">
+                    © 2020 Savigny by Rossmore Pharma Iberica SL
                 </span>
                 <div class="col 10 d-flex justify-content-center pt-4 pb-4">
                     <a href="https://www.facebook.com/" target=”_blank”>
@@ -214,7 +243,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!---->
     <script type="text/javascript" src="js/script.js"></script>

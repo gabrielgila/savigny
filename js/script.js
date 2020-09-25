@@ -19,3 +19,9 @@ $(document).ready(function () {
         $(".nav-menu").toggleClass("costum-navbar pt-2 pb-2");
     });
 });
+
+
+// === REFRESH on resize === //
+$(window).bind('resize', function(e) {
+    this.location.reload(false);
+});

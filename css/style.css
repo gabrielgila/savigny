@@ -365,7 +365,30 @@ a:hover {
 .product-name {
     font-size: 50px;
     font-weight: 900;
-    color: white
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.white-div {
+    background-color: white;
+}
+
+.white-hover {
+    opacity: 1
+}
+
+.white-div:hover .white-hover {
+    transition: .5s ease;
+    opacity: 0.3
+}
+
+.white-div:hover .product-name {
+    transition: .5s ease;
+    color: #707070
 }
 
 .mobile-product {

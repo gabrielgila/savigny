@@ -770,6 +770,22 @@ a:hover {
     bottom: 0%
 }
 
+@media screen and (max-width: 992px) {
+    .absolute-description-desktop-idara {
+        width: 50%;
+        height: 23%
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .absolute-description-desktop-idara {
+        width: 50%;
+        height: 28%
+    }
+}
+
+
+
 .more-info-idara {
     background-color: #074C61;
     font-size: 20px;

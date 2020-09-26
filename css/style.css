@@ -175,6 +175,10 @@ a:hover {
     top: 30%
 }
 
+.dark-text {
+    color: #000000
+}
+
 /* Home Page */
 
 .home-first {
@@ -822,7 +826,7 @@ a:hover {
     color: #074C61
 }
 
-/* Product Two */
+/* Product Three */
 
 .product-dulani {
     background-image: url('../images/productDulani.png');
@@ -839,7 +843,9 @@ a:hover {
 }
 
 .product-dulani-mobile {
-    background-image: url('../images/productDulani.png');
+    background-image:
+            linear-gradient(360deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
+            url('../images/productDulani.png');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -855,6 +861,15 @@ a:hover {
 .more-info-dulani {
     background-color: #F3857B;
     font-size: 20px;
+    font-weight: 700;
+    color: white
+}
+
+.more-info-dulani-mobile {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #F3857B;
+    font-size: 25px;
     font-weight: 700;
     color: white
 }
@@ -880,6 +895,30 @@ a:hover {
         height: 20%
     }
 }
+
+.button-back-mobile-dulani {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #F3857B;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #F3857B
+}
+
+.dulani-p-color-mobile {
+    background-color: #F3857B
+}
+
+/* Product Four */
+
+
+
+
 
 
 

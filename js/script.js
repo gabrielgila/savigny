@@ -2,12 +2,14 @@
 $(window).scroll(function () {
     let position = $(this).scrollTop();
     if (window.innerWidth > 768) {
-        console.log("uno");
         if (position >= 100) {
-            console.log("dos");
             $(".nav-menu").addClass("costum-navbar pt-2 pb-2");
+            $(".dulani").removeClass("dark-text");
+            $(".dulani-logo").removeClass("white-fill");
         } else {
             $(".nav-menu").removeClass("costum-navbar pt-2 pb-2");
+            $(".dulani").addClass("dark-text");
+            $(".dulani-logo").addClass("white-fill");
         }
     }
 });

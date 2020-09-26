@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adiran.html" beforeDir="false" afterPath="$PROJECT_DIR$/adiran.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dulani.html" beforeDir="false" afterPath="$PROJECT_DIR$/dulani.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/idara.html" beforeDir="false" afterPath="$PROJECT_DIR$/idara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ourproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourproducts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,8 @@
       <workItem from="1600886880157" duration="4109000" />
       <workItem from="1600984265961" duration="16324000" />
       <workItem from="1601041874926" duration="22061000" />
-      <workItem from="1601133804471" duration="3129000" />
+      <workItem from="1601133804471" duration="5587000" />
+      <workItem from="1601152216296" duration="4808000" />
     </task>
     <servers />
   </component>

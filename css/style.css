@@ -774,23 +774,23 @@ a:hover {
 
 .absolute-description-desktop-idara {
     width: 50%;
-    height: 33%;
+    height: 29%;
     background-color: #074C61;
     position: absolute;
-    bottom: 0%
+    bottom: 14%
 }
 
 @media screen and (max-width: 992px) {
     .absolute-description-desktop-idara {
-        width: 50%;
+        bottom: 10%;
         height: 23%
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
     .absolute-description-desktop-idara {
-        width: 50%;
-        height: 28%
+        bottom: 12%;
+        height: 26%
     }
 }
 
@@ -885,6 +885,7 @@ a:hover {
     bottom: 16%
 }
 
+@media screen and (max-width: 992px) {
 @media screen and (max-width: 992px) {
     .absolute-description-desktop-dulani {
         height: 18%;

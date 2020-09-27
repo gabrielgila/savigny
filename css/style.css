@@ -211,6 +211,12 @@ a:hover {
     color: white
 }
 
+.home-title-mobile {
+    font-weight: 900;
+    font-size: 57px;
+    color: white
+}
+
 .button-enter-home {
     padding-top: 25px;
 }

@@ -835,6 +835,7 @@ a:hover {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     text-align: left;
     align-content: center;
@@ -878,23 +879,23 @@ a:hover {
 
 .absolute-description-desktop-dulani {
     width: 50%;
-    height: 25%;
+    height: 18%;
     background-color: #F3857B;
     position: absolute;
-    bottom: 0%
+    bottom: 16%
 }
 
 @media screen and (max-width: 992px) {
     .absolute-description-desktop-dulani {
-        width: 50%;
-        height: 21%
+        height: 18%;
+        bottom: 11%
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
     .absolute-description-desktop-dulani {
-        width: 50%;
-        height: 20%
+        height: 16%;
+        bottom: 15%
     }
 }
 

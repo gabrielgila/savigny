@@ -318,8 +318,6 @@ a:hover {
 
 /* Filter Categories */
 
-
-
 .product-filter {
     font-size: 18px;
     font-weight: 300
@@ -442,6 +440,7 @@ a:hover {
     font-weight: 700;
     font-size: 30px;
 }
+
 .footer-desktop-text {
     font-weight: 300;
     font-size: 14px
@@ -469,53 +468,6 @@ a:hover {
 .footer-mobile-text {
     font-size: 12px;
     font-weight: 700
-}
-
-/* Extra */
-
-.hero-section {
-    background:
-            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
-            url("https://images.pexels.com/photos/240572/pexels-photo-240572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-hero {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.sub-text-hero {
-    font-family: "Dosis", sans-serif;
-    letter-spacing: 9px;
-    color: orange;
-}
-
-.nav-bottom {
-    background: transparent !important;
-    padding: 30px;
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-}
-
-.item-bottom {
-    padding: 0 20px;
-    transition: 0.2s;
-    font-size: 20px;
-}
-
-.item-bottom:hover {
-    background: transparent;
-    transform: translateY(-2px);
 }
 
 /* Contact */
@@ -634,7 +586,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     text-align: left;
     align-content: center;
     display: flex;
@@ -644,7 +595,7 @@ a:hover {
 }
 
 .product-adiran-mobile {
-    background-image: url('../images/productAdiran.png');
+    background-image: url('../images/mobileAdiran.png');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -763,7 +714,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     text-align: left;
     align-content: center;
     display: flex;
@@ -773,7 +723,7 @@ a:hover {
 }
 
 .product-idara-mobile {
-    background-image: url('../images/productIdara.png');
+    background-image: url('../images/mobileIdara.png');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -850,7 +800,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     text-align: left;
     align-content: center;
     display: flex;
@@ -862,7 +811,7 @@ a:hover {
 .product-dulani-mobile {
     background-image:
             linear-gradient(360deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
-            url('../images/productDulani.png');
+            url('../images/mobileDulani.png');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -899,7 +848,6 @@ a:hover {
     bottom: 16%
 }
 
-@media screen and (max-width: 992px) {
 @media screen and (max-width: 992px) {
     .absolute-description-desktop-dulani {
         height: 18%;
@@ -940,7 +888,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     text-align: left;
     align-content: center;
     display: flex;

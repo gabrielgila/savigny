@@ -21,6 +21,21 @@ a:hover {
     border-color: white;
 }
 
+.btn-outline-secondary {
+    border: 0 !important;
+    outline: 0 !important
+}
+
+.btn-outline-secondary:active {
+    border: 0 !important;
+    outline: 0 !important
+}
+
+.btn-outline-secondary:focus {
+    border: 0 !important;
+    outline: 0 !important
+}
+
 .row {
     margin-right: 0 !important;
     margin-left: 0 !important

@@ -331,9 +331,11 @@ a:hover {
 }
 
 .product-filter:hover {
-    font-size: 18px;
-    font-weight: 800;
-    transition: .5s ease;
+    cursor: pointer
+}
+
+.product-filter:active {
+    cursor: pointer
 }
 
 .product-one {

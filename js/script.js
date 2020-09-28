@@ -1,3 +1,8 @@
+// === REFRESH on resize === //
+$(window).bind('resize', function(e) {
+    this.location.reload(false);
+});
+
 // === NAVBAR === //
 $(window).scroll(function () {
     let position = $(this).scrollTop();
@@ -23,7 +28,26 @@ $(document).ready(function () {
 });
 
 
-// === REFRESH on resize === //
-$(window).bind('resize', function(e) {
-    this.location.reload(false);
+// === FILTER Our Products === //
+$(document).ready(function () {
+    $(".all-selected").click(function () {
+        $("#adiran").show();
+        $("#idara").show();
+        $("#xenia").show();
+        $("#dulani").show();
+    });
+
+    $(".woman-selected").click(function () {
+        $("#adiran").hide();
+        $("#idara").hide();
+        $("#xenia").show();
+        $("#dulani").show();
+    });
+
+    $(".sport-selected").click(function () {
+        $("#adiran").show();
+        $("#idara").show();
+        $("#xenia").hide();
+        $("#dulani").hide();
+    });
 });

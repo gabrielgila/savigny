@@ -19,38 +19,70 @@ $(window).scroll(function () {
     }
 });
 
-// === HAMBURGER BUTTON === //
+function internetExporer () {
+    function isIE() {
+        console.log("hola");
+        return document.documentMode;
+    }
+
+    if (isIE()) {
+        $("#headerContent").addClass("header-image-background");
+        $("#headerContentMobile").addClass("header-image-background");
+    } else {
+        $("#headerContent").removeClass("header-image-background");
+        $("#headerContentMobile").removeClass("header-image-background");
+    }
+}
+
+function ios () {
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+        $("#headerContent").addClass("header-image-background");
+        $("#headerContentMobile").addClass("header-image-background");
+    } else {
+        $("#headerContent").removeClass("header-image-background");
+        $("#headerContentMobile").removeClass("header-image-background");
+    }
+}
+
+
+function filterCategories () {
+    $(document).ready(function () {
+        $(".all-selected").click(function () {
+            $(".all-selected").toggleClass("border");
+            $(".all-selected").toggleClass("border-bottom-5");
+            $("#adiran").show();
+            $("#idara").show();
+            $("#xenia").show();
+            $("#dulani").show();
+        });
+
+        $(".woman-selected").click(function () {
+            $("#adiran").hide();
+            $("#idara").hide();
+            $("#xenia").show();
+            $("#dulani").show();
+        });
+
+        $(".sport-selected").click(function () {
+            $("#adiran").show();
+            $("#idara").show();
+            $("#xenia").hide();
+            $("#dulani").hide();
+        });
+});
+}
+
 $(document).ready(function () {
+    // === HAMBURGER BUTTON === //
     $(".nav-button").click(function () {
         $(".nav-button").toggleClass("change");
         $(".nav-menu").toggleClass("costum-navbar pt-2 pb-2");
     });
+
+    filterCategories();
+    internetExporer();
+    ios();
 });
 
 
-// === FILTER Our Products === //
-$(document).ready(function () {
-    $(".all-selected").click(function () {
-        $(".all-selected").toggleClass("border");
-        $(".all-selected").toggleClass("border-bottom-5");
-        $("#adiran").show();
-        $("#idara").show();
-        $("#xenia").show();
-        $("#dulani").show();
-
-    });
-
-    $(".woman-selected").click(function () {
-        $("#adiran").hide();
-        $("#idara").hide();
-        $("#xenia").show();
-        $("#dulani").show();
-    });
-
-    $(".sport-selected").click(function () {
-        $("#adiran").show();
-        $("#idara").show();
-        $("#xenia").hide();
-        $("#dulani").hide();
-    });
-});

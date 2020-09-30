@@ -3,10 +3,6 @@ $(window).bind('resize', function(e) {
     this.location.reload(false);
 });
 
-// === VIDEO HOME === //
-
-
-
 // === NAVBAR === //
 $(window).scroll(function () {
     let position = $(this).scrollTop();
@@ -35,10 +31,13 @@ $(document).ready(function () {
 // === FILTER Our Products === //
 $(document).ready(function () {
     $(".all-selected").click(function () {
+        $(".all-selected").toggleClass("border");
+        $(".all-selected").toggleClass("border-bottom-5");
         $("#adiran").show();
         $("#idara").show();
         $("#xenia").show();
         $("#dulani").show();
+
     });
 
     $(".woman-selected").click(function () {

@@ -49,8 +49,6 @@ function ios () {
 function filterCategories () {
     $(document).ready(function () {
         $(".all-selected").click(function () {
-            $(".all-selected").toggleClass("border");
-            $(".all-selected").toggleClass("border-bottom-5");
             $("#adiran").show();
             $("#idara").show();
             $("#xenia").show();

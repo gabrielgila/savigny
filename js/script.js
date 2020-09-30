@@ -34,6 +34,17 @@ function internetExporer () {
     }
 }
 
+function isChrome () {
+    let isChrome = !!window.chrome;
+    if( isChrome ) {
+        $("#esponsiveVideo").replaceWith($(''));
+
+    } else {
+        $("#esponsiveVideo").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+    }
+
+}
+
 function ios () {
     let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOS) {
@@ -68,7 +79,7 @@ function filterCategories () {
             $("#xenia").hide();
             $("#dulani").hide();
         });
-});
+    });
 }
 
 $(document).ready(function () {

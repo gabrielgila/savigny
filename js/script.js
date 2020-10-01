@@ -21,7 +21,6 @@ $(window).scroll(function () {
 
 function internetExporer () {
     function isIE() {
-        console.log("hola");
         return document.documentMode;
     }
 
@@ -34,17 +33,6 @@ function internetExporer () {
     }
 }
 
-function isChrome () {
-    let isChrome = !!window.chrome;
-    if( isChrome ) {
-        $("#esponsiveVideo").replaceWith($(''));
-
-    } else {
-        $("#esponsiveVideo").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
-    }
-
-}
-
 function ios () {
     let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOS) {
@@ -55,7 +43,6 @@ function ios () {
         $("#headerContentMobile").removeClass("header-image-background");
     }
 }
-
 
 function filterCategories () {
     $(document).ready(function () {
@@ -92,6 +79,11 @@ $(document).ready(function () {
     filterCategories();
     internetExporer();
     ios();
+
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+    } else {
+    }
 });
 
 

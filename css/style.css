@@ -41,12 +41,12 @@ a:hover {
     margin-left: 0 !important
 }
 
-.content-desktop {display: block;}
-.content-mobile {display: none;}
+.content-desktop {display: none;}
+.content-mobile {display: block;}
 
-@media screen and (max-width: 768px) {
-    .content-desktop {display: none}
-    .content-mobile {display: block}
+@media screen and (min-width: 768px) {
+    .content-desktop {display: block}
+    .content-mobile {display: none}
 }
 
 .footer-desktop {display: block;}

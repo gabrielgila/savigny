@@ -1,4 +1,3 @@
-
 function internetExporer () {
     function isIE() {
         return document.documentMode;
@@ -12,7 +11,7 @@ function internetExporer () {
     }
 }
 
-function ios () {
+function apple () {
     let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOS) {
         $("#headerContent").addClass("header-image-background");
@@ -49,7 +48,7 @@ $(document).ready(function () {
     });
 
     internetExporer();
-    ios();
+    apple();
 
     // === HAMBURGER BUTTON === //
     $(".nav-button").click(function () {

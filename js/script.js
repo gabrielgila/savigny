@@ -43,38 +43,12 @@ function ios () {
     }
 }
 
-function filterCategories () {
-    $(document).ready(function () {
-        $(".all-selected").click(function () {
-            $("#adiran").show();
-            $("#idara").show();
-            $("#xenia").show();
-            $("#dulani").show();
-        });
-
-        $(".woman-selected").click(function () {
-            $("#adiran").hide();
-            $("#idara").hide();
-            $("#xenia").show();
-            $("#dulani").show();
-        });
-
-        $(".sport-selected").click(function () {
-            $("#adiran").show();
-            $("#idara").show();
-            $("#xenia").hide();
-            $("#dulani").hide();
-        });
-    });
-}
-
 $(document).ready(function () {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
         $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
     } else {
     }
 
-    filterCategories();
     internetExporer();
     ios();
 
@@ -82,6 +56,27 @@ $(document).ready(function () {
     $(".nav-button").click(function () {
         $(".nav-button").toggleClass("change");
         $(".nav-menu").toggleClass("costum-navbar pt-2 pb-2");
+    });
+
+    $(".all-selected").click(function () {
+        $("#adiran").show();
+        $("#idara").show();
+        $("#xenia").show();
+        $("#dulani").show();
+    });
+
+    $(".woman-selected").click(function () {
+        $("#adiran").hide();
+        $("#idara").hide();
+        $("#xenia").show();
+        $("#dulani").show();
+    });
+
+    $(".sport-selected").click(function () {
+        $("#adiran").show();
+        $("#idara").show();
+        $("#xenia").hide();
+        $("#dulani").hide();
     });
 });
 

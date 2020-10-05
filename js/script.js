@@ -23,7 +23,6 @@ function internetExporer () {
     function isIE() {
         return document.documentMode;
     }
-
     if (isIE()) {
         $("#headerContent").addClass("header-image-background");
         $("#headerContentMobile").addClass("header-image-background");
@@ -70,19 +69,20 @@ function filterCategories () {
 }
 
 $(document).ready(function () {
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+    } else {
+    }
+
+    filterCategories();
+    internetExporer();
+    ios();
+
     // === HAMBURGER BUTTON === //
     $(".nav-button").click(function () {
         $(".nav-button").toggleClass("change");
         $(".nav-menu").toggleClass("costum-navbar pt-2 pb-2");
     });
-
-    filterCategories();
-    internetExporer();
-
-    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-        $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
-    } else {
-    }
 });
 
 

@@ -78,7 +78,6 @@ $(document).ready(function () {
 
     filterCategories();
     internetExporer();
-    ios();
 
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
         $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));

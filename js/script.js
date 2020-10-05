@@ -25,6 +25,7 @@ function ios () {
     } else {
         $("#headerContent").removeClass("header-image-background");
         $("#headerContentMobile").removeClass("header-image-background");
+        $(".video-container").show();
     }
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
         $(".source-video").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
@@ -48,13 +49,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-        $("#webmSource").hide();
-        $("#mp4Source").show();
-
-    } else {
-    }
 
     internetExporer();
     ios();

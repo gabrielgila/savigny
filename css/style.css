@@ -237,30 +237,30 @@ a:hover {
     margin:0 auto;
 }
 
-#responsiveVideo {
+.responsiveVideo {
     height: auto;
 }
 
 @media screen and (max-width: 992px) {
-    #responsiveVideo {
+    .responsiveVideo {
         margin-left: -300px !important
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
-    #responsiveVideo {
+    .responsiveVideo {
         margin-left: -100px !important;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    #responsiveVideo {
+    .responsiveVideo {
         width: 100%
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #responsiveVideo {
+    .responsiveVideo {
         margin-left: -500px !important;
     }
 }

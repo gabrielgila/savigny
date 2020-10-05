@@ -3,22 +3,6 @@ $(window).bind('resize', function(e) {
     this.location.reload(false);
 });
 
-// === NAVBAR === //
-$(window).scroll(function () {
-    let position = $(this).scrollTop();
-    if (window.innerWidth > 768) {
-        if (position >= 100) {
-            $(".nav-menu").addClass("costum-navbar pt-2 pb-2");
-            $(".dulani").removeClass("dark-text");
-            $(".dulani-logo").removeClass("white-fill");
-        } else {
-            $(".nav-menu").removeClass("costum-navbar pt-2 pb-2");
-            $(".dulani").addClass("dark-text");
-            $(".dulani-logo").addClass("white-fill");
-        }
-    }
-});
-
 function internetExporer () {
     function isIE() {
         return document.documentMode;
@@ -37,15 +21,38 @@ function ios () {
     if (isIOS) {
         $("#headerContent").addClass("header-image-background");
         $("#headerContentMobile").addClass("header-image-background");
+        $(".video-container").hide();
     } else {
         $("#headerContent").removeClass("header-image-background");
         $("#headerContentMobile").removeClass("header-image-background");
     }
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        $(".source-video").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+    } else {
+    }
 }
 
 $(document).ready(function () {
+    // === NAVBAR === //
+    $(window).scroll(function () {
+        let position = $(this).scrollTop();
+        if (window.innerWidth > 768) {
+            if (position >= 100) {
+                $(".nav-menu").addClass("costum-navbar pt-2 pb-2");
+                $(".dulani").removeClass("dark-text");
+                $(".dulani-logo").removeClass("white-fill");
+            } else {
+                $(".nav-menu").removeClass("costum-navbar pt-2 pb-2");
+                $(".dulani").addClass("dark-text");
+                $(".dulani-logo").addClass("white-fill");
+            }
+        }
+    });
+
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-        $("#videoId").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+        $("#webmSource").hide();
+        $("#mp4Source").show();
+
     } else {
     }
 
@@ -79,5 +86,3 @@ $(document).ready(function () {
         $("#dulani").hide();
     });
 });
-
-

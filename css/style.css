@@ -218,6 +218,13 @@ a:hover {
     background-size: contain, cover
 }
 
+.our-products-header-background {
+    background-image: url('../images/mobileOurProducts.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain, cover
+}
+
 .video-container {
     position: absolute;
     top: 0%;

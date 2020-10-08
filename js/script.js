@@ -5,9 +5,13 @@ function internetExporer () {
     if (isIE()) {
         $("#headerContent").addClass("header-image-background");
         $("#headerContentMobile").addClass("header-image-background");
+        $("#headerContentOurProducts").addClass("header-image-background");
+        $("#headerContentMobileOurProducts").addClass("header-image-background");
     } else {
         $("#headerContent").removeClass("header-image-background");
         $("#headerContentMobile").removeClass("header-image-background");
+        $("#headerContentOurProducts").removeClass("header-image-background");
+        $("#headerContentMobileOurProducts").removeClass("header-image-background");
     }
 }
 
@@ -16,10 +20,14 @@ function apple () {
     if (isIOS) {
         $("#headerContent").addClass("header-image-background");
         $("#headerContentMobile").addClass("header-image-background");
+        $("#headerContentOurProducts").addClass("our-products-header-background");
+        $("#headerContentMobileOurProducts").addClass("our-products-header-background");
         $(".video-container").hide();
     } else {
         $("#headerContent").removeClass("header-image-background");
         $("#headerContentMobile").removeClass("header-image-background");
+        $("#headerContentOurProducts").removeClass("our-products-header-background");
+        $("#headerContentMobileOurProducts").removeClass("our-products-header-background");
         $(".video-container").show();
     }
 

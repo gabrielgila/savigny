@@ -25,6 +25,7 @@ function apple () {
 
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
         $(".source-video").replaceWith($('<source src="video/homeVideo.mp4" type="video/mp4">'));
+        $(".source-video-our-products").replaceWith($('<source src="video/ourProducts.mp4" type="video/mp4">'));
     } else {
     }
 }

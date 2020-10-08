@@ -32,15 +32,20 @@
                 <div class="mx-auto">
                     <ul class="navbar-nav nav-m mx-auto">
                         <li class="nav-item content-desktop px-2">
-                            <a class="nav-link menu-item text-nowrap" href="index.html">HOME</a>
+                            <a class="nav-link menu-item text-nowrap dulani dark-text" href="index.html">HOME</a>
                         </li>
-                        <li class="pt-2 mb-3">
+                        <li class="pt-2 mb-3 content-desktop">
+                            <a href="index.html">
+                                <img class="nav-item navbar-mobile-logo dulani-logo white-fill" src="images/savignyLogo.svg">
+                            </a>
+                        </li>
+                        <li class="pt-2 mb-3 content-mobile">
                             <a href="index.html">
                                 <img class="nav-item navbar-mobile-logo" src="images/savignyLogo.svg">
                             </a>
                         </li>
                         <li class="nav-item content-desktop px-2">
-                            <a class="nav-link menu-item text-nowrap" href="ourproducts.html">OUR PRODUCTS</a>
+                            <a class="nav-link menu-item text-nowrap dulani dark-text" href="ourproducts.html">OUR PRODUCTS</a>
                         </li>
                         <div class="dropdown-divider"></div>
                         <li class="content-mobile nav-item">
@@ -70,7 +75,7 @@
                 <div class="navbar-collapse collapse mr-auto order-3 absolute-contact-right">
                     <ul class="navbar-nav ml-auto">
                         <li class="content-desktop nav-item">
-                            <a class="nav-link menu-item" href="contact.html">CONTACT</a>
+                            <a id="dulani" class="nav-link menu-item dulani dark-text" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -78,57 +83,75 @@
         </div>
     </nav>
 
-    <div class="content-desktop">
-        <section class="our-products-home" >
-            <div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <div class="d-flex flex-column">
-                                <div>
-                                    <a href="https://www.facebook.com/" target=”_blank”>
-                                        <img class="p-2 white-fill" src="images/instagram.svg" alt="Instagram Logo" >
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.facebook.com/" target=”_blank”>
-                                        <img class="p-2 white-fill" src="images/twitter.svg" alt="Twitter Logo" >
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.facebook.com/" target=”_blank”>
-                                        <img class="p-2 white-fill" src="images/facebook.svg" alt="Facebook logo" >
-                                    </a>
+    <section class="relative-div">
+        <div class="content-desktop abs-div">
+            <div class="our-products-home" >
+                <div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <a href="https://www.facebook.com/" target=”_blank”>
+                                            <img class="p-2 white-fill" src="images/instagram.svg" alt="Instagram Logo" >
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" target=”_blank”>
+                                            <img class="p-2 white-fill" src="images/twitter.svg" alt="Twitter Logo" >
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" target=”_blank”>
+                                            <img class="p-2 white-fill" src="images/facebook.svg" alt="Facebook logo" >
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col pl-5">
-                            <h1 class="home-title">OUR<br >PRODUCTS</h1>
-                            <div class="button-enter-home">
-                                <button type="button" class="btn btn-outline-light rounded-pill button-white-border jump-to">
-                                    <span class="enter-home">ENTER</span>
-                                </button>
+                            <div class="col pl-5">
+                                <h1 class="home-title">OUR<br >PRODUCTS</h1>
+                                <div class="button-enter-home">
+                                    <button type="button" class="btn btn-outline-light rounded-pill button-white-border jump-to">
+                                        <span class="enter-home">ENTER</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <div class="content-mobile">
-        <section class="our-products-home-mobile relative-div">
-            <div class="mobile-component">
-                <div class="title-mobile-abolute">
-                    <h1 class="home-title">OUR<br>PRODUCTS</h1>
+        </div>
+        <div class="content-desktop">
+            <div id="headerContent" class="home-first relative-div">
+                <div class="video-container">
+                    <video class="responsiveVideoMobile" preload="none" autoplay muted loop playsinline>
+                        <source class="source-video-our-products" src="video/ourProductswebM.webm" type="video/webm">
+                    </video>
                 </div>
             </div>
-            <div class="button-enter-home button-mobile-absolute">
-                <button type="button" class="btn btn-outline-light rounded-pill button-white-border jump-to">
-                    <div class="enter-contact-mobile" href="">ENTER</div>
-                </button>
+        </div>
+    </section>
+
+    <div class="content-mobile">
+        <div id="headerContentMobile" class="home-first relative-div">
+            <div id="videoMobile" class="video-container">
+                <video id="videoM" class="responsiveVideo" preload="none" autoplay muted loop playsinline>
+                    <source class="source-video-our-products" src="video/ourProductswebM.webm" type="video/webm">
+                </video>
             </div>
-        </section>
+            <div class="container-fluid align-self-center center">
+                <div class="mobile-component">
+                    <div class="title-mobile-abolute">
+                        <h1 class="home-title">OUR<br >PRODUCTS</span></h1>
+                    </div>
+                </div>
+                <div class="button-enter-home button-mobile-absolute">
+                    <button type="button" class="btn btn-outline-light rounded-pill button-white-border jump-to">
+                        <span class="enter-contact-mobile">ENTER</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section class="jump-end">

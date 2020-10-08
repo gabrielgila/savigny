@@ -260,8 +260,36 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .responsiveVideo {
+    .responsiveVideoMobile {
         margin-left: -500px !important;
+    }
+}
+
+.responsiveVideoMobile {
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .responsiveVideoMobile {
+        margin-left: -300px !important
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .responsiveVideoMobile {
+        margin-left: -100px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .responsiveVideoMobile {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .responsiveVideoMobile {
+        margin-left: -300px !important;
     }
 }
 
@@ -269,6 +297,11 @@ a:hover {
     position: absolute;
     bottom: 50%;
     z-index: 1;
+}
+
+.abs-div {
+    z-index: 2;
+    position: absolute
 }
 
 .home-title {
@@ -649,33 +682,38 @@ a:hover {
 /* Our products */
 
 .our-products-home {
-    background-image: url('../images/ourProducts.png');
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     text-align: left;
     align-content: center;
     display: flex;
     align-items: center;
     margin: 0 0 0 0;
-    padding: 0 0 0 0
+    padding: 0 0 0 0;
+    z-index: 1;
 }
 
 .our-products-home-mobile {
-    background-image:
-            linear-gradient(360deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 34%, rgba(0,0,0,0.2) 100%),
-            url('../images/ourProducts.png');
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     align-items: center;
     justify-content: center;
     display: flex;
     text-align: center
+}
+
+.our-products-video {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute
 }
 
 .product-sutbtitle {
@@ -1073,6 +1111,14 @@ a:hover {
     font-size: 25px;
     font-weight: 700;
     color: #789B9E
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex
 }
 
 

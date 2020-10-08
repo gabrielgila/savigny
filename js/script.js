@@ -31,6 +31,13 @@ function apple () {
 
 $(document).ready(function () {
 
+    // === Scroll to next Element onCLick === //
+    $(".jump-to").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".jump-end").offset().top},
+            'slow');
+    });
+
     // === NAVBAR === //
     $(window).scroll(function () {
         let position = $(this).scrollTop();
